@@ -44,7 +44,7 @@ const Index = () => {
       style={{
         position: "fixed",
         inset: 0,
-        background: "#050003",
+        background: "#f0ece4",
         overflow: "hidden",
       }}
     >
@@ -57,7 +57,7 @@ const Index = () => {
           alpha: false,
           powerPreference: "high-performance",
           toneMapping: 1,
-          toneMappingExposure: 1.2,
+          toneMappingExposure: 1.4,
         }}
         style={{ position: "absolute", inset: 0 }}
       >
@@ -65,9 +65,9 @@ const Index = () => {
           <CorridorScene />
           <EffectComposer>
             <Bloom
-              intensity={1.8}
-              luminanceThreshold={0.2}
-              luminanceSmoothing={0.9}
+              intensity={0.8}
+              luminanceThreshold={0.6}
+              luminanceSmoothing={0.7}
               mipmapBlur
             />
           </EffectComposer>
@@ -104,33 +104,33 @@ const Index = () => {
               width: 72,
               height: 72,
               filter:
-                "invert(1) drop-shadow(0 0 16px rgba(255,60,60,1)) drop-shadow(0 0 40px rgba(204,0,0,0.7))",
+                "drop-shadow(0 0 12px rgba(200,30,30,0.9)) drop-shadow(0 0 30px rgba(200,30,30,0.5))",
               animation: "pulse 3s ease-in-out infinite",
             }}
           />
           <div
             style={{
-              color: "#f0f0f0",
+              color: "#1a0a08",
               fontFamily: "Georgia, 'Times New Roman', serif",
               fontWeight: 700,
               fontSize: "clamp(22px, 4vw, 42px)",
               letterSpacing: "0.35em",
               textTransform: "uppercase",
               textShadow:
-                "0 0 20px rgba(204,0,0,0.9), 0 0 60px rgba(204,0,0,0.4), 0 2px 4px rgba(0,0,0,0.8)",
+                "0 0 12px rgba(200,30,30,0.6), 0 2px 4px rgba(0,0,0,0.25)",
             }}
           >
             RITUAL
           </div>
           <div
             style={{
-              color: "#cc3322",
+              color: "#cc1111",
               fontFamily: "Georgia, 'Times New Roman', serif",
               fontWeight: 400,
               fontSize: "clamp(10px, 1.5vw, 14px)",
               letterSpacing: "0.55em",
               textTransform: "uppercase",
-              textShadow: "0 0 15px rgba(204,0,0,0.7)",
+              textShadow: "0 0 10px rgba(200,30,30,0.5)",
             }}
           >
             SOVEREIGN AI
@@ -153,7 +153,7 @@ const Index = () => {
       >
         <div
           style={{
-            color: "rgba(200,180,180,0.5)",
+            color: "rgba(80,40,40,0.7)",
             fontFamily: "Georgia, serif",
             fontSize: "clamp(9px, 1.2vw, 11px)",
             letterSpacing: "0.5em",
